@@ -6,7 +6,7 @@ import datetime
 
 st.title('Daily readings')
 st.text('This app shows the data and graphs of the wells')
-cnx = sqlite3.connect('C:/Users/Lenovo/PycharmProjects/Texteditor/Daily.db')
+cnx = sqlite3.connect('Daily.db')
 
 # Allow the user to select the percentage change threshold using a slider
 percentage_threshold = st.sidebar.slider("# **Select the Percentage Change %**", 1, 100, 40)
